@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Bamazon is a node command line application similar to amamzon, that will dispaly inventory, and let user pick from inventory to purchase absed on the quantity of items availabe.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loubeants/Bamazon.git"
+  },
+  "author": "Lou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loubeants/Bamazon/issues"
+  },
+  "homepage": "https://github.com/loubeants/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  }
+}
