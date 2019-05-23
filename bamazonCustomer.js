@@ -49,7 +49,7 @@ function ShopItems() {
             {
                 name: "itemNumber",
                 type: "input",
-                message: "What is the item number for the product you wish to Shop?",
+                message: "Put the item number for the whatever product you wish to purchase?",
                 validate: function (value) {
                     if ((isNaN(value) === false) && (value <= res.length)) {
                         return true;
@@ -86,13 +86,13 @@ function ShopItems() {
                     ],
                     function (err) {
                         if (err) throw err;
-                        console.log("===========\r\nYou have ordered " + quantity + " " + chosenItem.product_name + ". Your total is $" + (chosenItem.price * quantity) + ". \r\nThank you for shopping with us.\r\n==========")
+                        console.log("===========\r\nYou ordered " + quantity + " " + chosenItem.product_name + ". Your amount is $" + (chosenItem.price * quantity) + ". \r\nThank you for shopping with us.\r\n==========")
                         listItems();
                     }
                 );
             }
             else {
-                console.log("==========\r\nSorry, we do not have enough product left in stock to complete this order, please update your order quantity.\r\n==========")
+                console.log("==========\r\nNot enough product in our inventory for this order, check item count and re-order.\r\n==========")
                 listItems();
             }
         });
